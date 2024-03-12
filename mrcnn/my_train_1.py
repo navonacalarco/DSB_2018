@@ -92,7 +92,7 @@ ROOT_DIR = os.getcwd()
 
 
 ## Change this dir to the stage 1 training data
-train_dir = os.path.join(ROOT_DIR,'stage1_train')
+train_dir = os.path.join(ROOT_DIR,'/kaggle-dsbowl-2018-dataset-fixes/stage1_train')
 
 # Get train IDs
 train_ids = next(os.walk(train_dir))[1]
@@ -117,7 +117,7 @@ MODEL_DIR = os.path.join(ROOT_DIR, "logs")
 
 # Local path to trained weights file
 ## https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5
-COCO_MODEL_PATH = os.path.join(ROOT_DIR, "mask_rcnn_coco.h5")
+COCO_MODEL_PATH = os.path.join(ROOT_DIR, "datasets/mask_rcnn_coco.h5")
 
 
 model = modellib.MaskRCNN(mode="training", config=bowl_config,
