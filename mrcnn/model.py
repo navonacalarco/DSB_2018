@@ -23,6 +23,7 @@ import keras.backend as K
 import keras.layers as KL
 #import keras.engine as KE
 import keras.models as KM
+from tensorflow.python.keras.engine import Layer
 
 # from mrcnn import utils
 import utils
