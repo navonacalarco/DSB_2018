@@ -27,17 +27,16 @@ import os
 import my_functions as f
 
 
-ROOT_DIR = os.getcwd()
+ROOT_DIR = '/home/navona/projects/def-uludagk/navona/MBP1413/data'
 MODEL_DIR = os.path.join(ROOT_DIR, "logs")
 
 ## This is the path to your trained weights
-model_path = os.path.join(MODEL_DIR,'YOUR_LOG_PATH','final.h5') 
+model_path = os.path.join(MODEL_DIR,'003','final.h5') 
 
 ## modify these paths to where stage_2 images are downloaded
 sample_submission = pd.read_csv('stage2_sample_submission_final.csv')
-test_path ='stage_2' 
+test_path ='stage2_test' 
     
-
 #######################################################################################
 ## SET UP CONFIGURATION
 from config import Config
