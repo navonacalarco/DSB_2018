@@ -69,22 +69,17 @@ inference_config.display()
 #######################################################################################
 
 
-ROOT_DIR = os.getcwd()
+ROOT_DIR = '/home/navona/projects/def-uludagk/navona/MBP1413/DSB_2018/data'
 MODEL_DIR = os.path.join(ROOT_DIR, "logs")
 
-
 ## Change this with the path to the last epoch of train
-model_path = 
-model_path = os.path.join(MODEL_DIR,'YOUR_LOG_FOLDER','final.h5')
-
+model_path = os.path.join(MODEL_DIR,'003','final.h5')
 
 ## change this with the correct paths for images and sample submission
-test_path = os.path.join(ROOT_DIR,'stage_2')
+test_path = os.path.join(ROOT_DIR,'stage_2_test')
 sample_submission = pd.read_csv('stage2_sample_submission_final.csv')
 
-
 print("Loading weights from ", model_path)
-
 
 import time
 start_time = time.time()
