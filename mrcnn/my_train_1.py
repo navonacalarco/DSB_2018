@@ -73,7 +73,7 @@ bowl_config.display()
 #######################################################################################
 
 # Root directory of the project
-ROOT_DIR = os.getcwd() #/home/navona/projects/def-uludagk/navona/MBP1413/data
+ROOT_DIR = '/home/navona/projects/def-uludagk/navona/MBP1413/data'
 
 ## Change this dir to the stage 1 training data
 train_dir = os.path.join(ROOT_DIR,'/stage1_train')
